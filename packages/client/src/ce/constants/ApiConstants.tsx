@@ -12,3 +12,8 @@ export enum ERROR_CODES {
 
 export const LOGIN_SUBMIT_PATH = "login";
 export const SIGNUP_SUBMIT_PATH = "users";
+
+
+export const OAuthURL = "/oauth2/authorization";
+export const GoogleOAuthURL = `${OAuthURL}/google`;
+export const GithubOAuthURL = `${OAuthURL}/github`;

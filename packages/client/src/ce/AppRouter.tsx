@@ -22,6 +22,7 @@ import { getSafeCrash, getSafeCrashCode } from "@/selectors/errorSelectors";
 import { ERROR_CODES } from "./constants/ApiConstants";
 import ErrorPage from "@/pages/common/ErrorPage";
 import UserAuth from "@/pages/UserAuth";
+import { Login } from "@/pages/UserAuth/Login";
 
 export const loadingIndicator = <PageLoadingBar />;
 export function LocalRoutes() {
@@ -33,7 +34,7 @@ export function LocalRoutes() {
       <Routes>
         {/* <Route path={AUTH_LOGIN_URL} element={<UserAuth></UserAuth>}> */}
         <Route path={USER_AUTH_URL} element={<UserAuth></UserAuth>}>
-          <Route element={<div>测试页</div>} path="login" />
+          <Route element={<Login></Login>} path="login" />
         </Route>
         <Route path={BASE_URL} element={<LandingScreen></LandingScreen>} />
       </Routes>

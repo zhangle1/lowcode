@@ -1,3 +1,11 @@
+@import "../src/theme/defaultTheme.css";
+@import "../src/theme/colors.css";
+@import "../src/theme/wds.css";
+
+@import "../../../node_modules/@appsmithorg/design-system/build/css/design-system.css";
+/* @import "~design-system/build/css/design-system.css"; */
+
+
 
 
 :root {

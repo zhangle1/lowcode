@@ -26,6 +26,7 @@ import {
 } from "@/constants/routes/baseRoutes";
 import Container from "./Container";
 import Helmet from "react-helmet";
+import ThirdPartyAuth from "./ThirdPartyAuth";
 
 const validate = (values: LoginFormValues, props: ValidateProps) => {
   const errors: LoginFormValues = {};
@@ -71,6 +72,8 @@ export function Login(props: LoginFormProps) {
   }
   let loginURL = "/api/v1/" + LOGIN_SUBMIT_PATH;
   let signupURL = SIGN_UP_URL;
+
+  let socialLoginList=['google','github']
   const redirectUrl = queryParams.get("redirectUrl");
   if (redirectUrl != null && getIsSafeRedirectURL(redirectUrl)) {
     const encodedRedirectUrl = encodeURIComponent(redirectUrl);
@@ -106,8 +109,10 @@ export function Login(props: LoginFormProps) {
       <Helmet>
         <title>{htmlPageTitle}</title>
       </Helmet>
+      {socialLoginList.length > 0 && (
+        <ThirdPartyAuth logins={socialLoginList} type={"SIGNIN"} />
+      )}
 
-      
     </Container>
   );
 }
