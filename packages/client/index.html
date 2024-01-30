@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的低代码平台</title>
+    <style>
+     #loader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 4px;
+        background: #d7d7d7;
+        transition: all ease-in 0.3s;
+      }
+    </style>
+  </head>
+  <body class="appsmith-light-theme">
+    <div id="loader" style="width: 30vw"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

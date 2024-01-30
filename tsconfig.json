@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "declaration": false,
+      "noImplicitAny": false,
+      "removeComments": true,
+      "noLib": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "target": "es6",
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "moduleResolution": "node",
+      "lib": ["es6"],
+      "composite": true,
+      "skipLibCheck": true,
+      "module": "ESNext",
+      "moduleResolution": "bundler",
+      "allowSyntheticDefaultImports": true
+
+    },
+    "exclude": ["node_modules"]
+  }
