@@ -3,7 +3,7 @@
 @import "../src/theme/wds.css";
 
 @import "../../../node_modules/@appsmithorg/design-system/build/css/design-system.css";
-/* @import "~design-system/build/css/design-system.css"; */
+@import "../../../node_modules/@appsmithorg/design-system-old/build/css/design-system-old.css";
 
 
 
